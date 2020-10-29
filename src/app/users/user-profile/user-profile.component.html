@@ -1,0 +1,45 @@
+<div class="hero-body">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-one-fifth">
+        <figure class="image is-1by1">
+          <img class="is-rounded" src="assets/avatar.PNG">
+        </figure>
+      </div>
+      <div class="column is-full-mobile">
+        <h1 class="title">
+          {{ user?.firstName }} {{ user?.lastName }}
+        </h1>
+        <h2 class="subtitle">
+          {{ user?.email }}
+        </h2>
+        <p>{{ user?.quote }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="box" *ngFor="let post of posts$ | async">
+  <article class="media">
+    <figure class="media-left">
+      <p class="image is-64x64">
+        <img class="is-rounded" src="assets/avatar.PNG">
+      </p>
+    </figure>
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong>
+            <a [routerLink]="['users/profile/', post?.userId]">
+              {{ post?.firstName }} {{ post?.lastName }}
+            </a>
+          </strong>
+          <small> · {{ post?.email }}</small>
+          <br>
+          {{ post?.content }}
+          <br>
+        </p>
+      </div>
+    </div>
+  </article>
+</div>

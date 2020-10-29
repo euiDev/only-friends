@@ -144,6 +144,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "only-friends"
+    }
+  },
+  "defaultProject": "only-friends",
+  "cli": {
+    "analytics": false
+  }
 }

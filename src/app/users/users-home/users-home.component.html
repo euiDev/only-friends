@@ -1,0 +1,23 @@
+<div class="box" *ngFor="let user of users$ | async">
+  <article class="media">
+    <div class="media-left">
+      <figure class="image is-64x64">
+        <img class="is-rounded" src="assets/avatar.PNG" alt="Image">
+      </figure>
+    </div>
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong>
+            <a [routerLink]="['profile/', user.id]">{{ user?.firstName }} {{ user?.lastName }}</a>
+          </strong>
+          <small> · {{ user?.email }}</small>
+          <br/>
+          {{ user?.quote }}
+        </p>
+      </div>
+      <nav class="level is-mobile">
+      </nav>
+    </div>
+  </article>
+</div>

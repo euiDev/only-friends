@@ -1,0 +1,41 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "firstName": "John",
+      "lastName": "Smith",
+      "email": "admin@mail.com",
+      "quote": "If you ain't first, you're last",
+      "age": "18"
+    }
+  ],
+  "posts": [
+    {
+      "userId": 1,
+      "firstName": "John",
+      "lastName": "Smith",
+      "email": "admin@mail.com",
+      "content": "First Post",
+      "datePosted": 1603947507607,
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "firstName": "John",
+      "lastName": "Smith",
+      "email": "admin@mail.com",
+      "content": "Second Post",
+      "datePosted": 1603947512478,
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "firstName": "John",
+      "lastName": "Smith",
+      "email": "admin@mail.com",
+      "content": "Third Post",
+      "datePosted": 1603947671820,
+      "id": 3
+    }
+  ]
+}
